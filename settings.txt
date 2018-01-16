@@ -1,0 +1,4 @@
+Starting_Player:Black
+Player1_Color:0x330033ff
+Player2_Color:0xb31a1aff
+Board_Size:10

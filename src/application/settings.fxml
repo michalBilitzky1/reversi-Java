@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.layout.GridPane.*?>
+
+<GridPane alignment="CENTER" hgap="10" prefHeight="280.0" prefWidth="503.0" style="-fx-background-color: GREY;" vgap="10" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SettingsController">
+    <padding><Insets bottom="10" left="25" right="25" top="25" /></padding>
+    <children>
+        <fx:define>
+            <ToggleGroup fx:id="players"/>
+        </fx:define>
+        <Label text="First Player:" GridPane.rowIndex="2" />
+        <RadioButton fx:id="firstPlayer" toggleGroup="$players" prefHeight="21.0" prefWidth="15.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+
+        <Label text="Second Player:" GridPane.rowIndex="3" />
+
+
+        <RadioButton fx:id="secondPlayer" toggleGroup="$players" prefHeight="25.0" prefWidth="104.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+
+        <Label text="First Player Color:" GridPane.rowIndex="4" />
+        <ColorPicker fx:id="firstPlayerColor" prefHeight="25.0" prefWidth="141.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+
+        <Label prefHeight="15.0" prefWidth="190.0" text="Second Player Color:" GridPane.rowIndex="5" />
+        <ColorPicker fx:id="secondPlayerColor" prefHeight="25.0" prefWidth="129.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+
+
+        <Label text="Board Size:" GridPane.rowIndex="6" />
+        <ChoiceBox fx:id="boardSize" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+
+
+        <HBox alignment="bottom_right" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+        <Text fx:id="messageText" GridPane.columnIndex="0" GridPane.rowIndex="7" />
+
+        <Button onAction="#done" prefHeight="25.0" prefWidth="70.0" text="Done" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+        <Button onAction="#back" prefHeight="25.0" prefWidth="70.0" text="Back" GridPane.columnIndex="0" GridPane.rowIndex="7" />
+    </children>
+    <columnConstraints>
+        <ColumnConstraints maxWidth="199.0" minWidth="193.0" prefWidth="199.0" />
+        <ColumnConstraints maxWidth="135.0" minWidth="117.0" prefWidth="117.0" />
+        <ColumnConstraints maxWidth="85.0" minWidth="76.0" prefWidth="82.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+    </rowConstraints>
+</GridPane>

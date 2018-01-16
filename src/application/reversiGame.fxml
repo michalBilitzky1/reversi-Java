@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+
+<HBox fx:id="root" spacing="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="application.ReversiGameController">
+    <children>
+        <VBox spacing="10">
+            <children>
+                <Label  fx:id="playerTurn" />
+                <Label  fx:id="player1Score"/>
+                <Label  fx:id="player2Score"/>
+                <Button fx:id="sMoves" onAction="#showMoves" />
+            </children>
+        </VBox>
+    </children>
+</HBox>

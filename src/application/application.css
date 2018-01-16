@@ -1,0 +1,49 @@
+.root {
+    -fx-background-image: url("butterfly.jpg")
+}
+.label {
+-fx-font-size: 12px;
+-fx-font-weight: bold;
+}
+.button {
+-fx-text-fill: white;
+-fx-font-weight: bold;
+-fx-background-color: linear-gradient(#61a2b1, #2A5058);
+}.root {
+     -fx-background-image: url("dolphin-fact.jpg")
+ }
+ .label {
+ -fx-font-size: 12px;
+ -fx-font-weight: bold;
+ }
+ .button {
+ -fx-text-fill: white;
+ -fx-font-weight: bold;
+ -fx-background-color: linear-gradient(#61a2b1, #2A5058);
+ }
+ #welcomeText {
+ -fx-font-size: 32px;
+ -fx-font-family: Arial;
+ -fx-fill: rgb(85,87,83);
+ }
+ .setStyle{
+     -fx-border-color: lightblue;
+     -fx-font-size: 20;
+     -fx-border-insets: -5;
+     -fx-border-radius: 5;
+     -fx-border-style: dotted;
+     -fx-border-width: 2;
+ }
+#welcomeText {
+-fx-font-size: 32px;
+-fx-font-family: Arial;
+-fx-fill: rgb(85,87,83);
+}
+.setStyle{
+    -fx-border-color: lightblue;
+    -fx-font-size: 20;
+    -fx-border-insets: -5;
+    -fx-border-radius: 5;
+    -fx-border-style: dotted;
+    -fx-border-width: 2;
+}
